@@ -1,0 +1,12 @@
+//abstracts
+@import "abstracts/variables";
+
+//base
+@import "base/reset";
+@import "base/base";
+
+//abstracts
+@import "components/searchAndFilter";
+@import "components/cardImage";
+@import "components/cardCharacter";
+@import "components/header";
