@@ -1,10 +1,10 @@
 <template>
   <div class="search-character">
     <div class="search-character-content">
-      <el-input v-model="text" placeholder="Ingresa nombre del personaje" minlength="4" maxlength="20" size="large" />
-      <el-select v-if="!showError && text.length > 0" v-model="statusFilter" placeholder="Status" size="large" @change="emit('change-filter', text, statusFilter)">
-        <el-option v-for="item in options" :key="item.value" :label="item.name" :value="item.value" />
-      </el-select>
+      <el-input id="search" v-model="text" placeholder="Ingresa nombre del personaje" minlength="4" maxlength="20" size="large" />
+      <select id="status" class="el-select" v-if="!showError && text.length > 0" v-model="statusFilter" placeholder="Status" size="large" @change="emit('change-filter', text, statusFilter)">
+        <option v-for="item in options" :key="item.value" :label="item.name" :value="item.value" />
+      </select>
     </div>
     <div v-if="showError && text.length > 0" class="search-character-error">
       <span>{{ showError }}</span>
