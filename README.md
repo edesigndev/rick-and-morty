@@ -22,6 +22,18 @@ npm i
 npm run dev
 ```
 
+### Format prettier
+
+```sh
+npm run format
+```
+
+### Linter eslint
+
+```sh
+npm run lint
+```
+
 # Vue 3 + TypeScript + Vite + Pinia + Router 4
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.

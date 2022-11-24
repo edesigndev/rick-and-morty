@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
-import { fileURLToPath, URL } from 'url';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from "vite"
+import { fileURLToPath, URL } from "url"
+import AutoImport from "unplugin-auto-import/vite"
+import Components from "unplugin-vue-components/vite"
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
+import vue from "@vitejs/plugin-vue"
 
 export default defineConfig({
   plugins: [
@@ -17,7 +17,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   transpileDependencies: true,
@@ -28,4 +28,4 @@ export default defineConfig({
       },
     },
   },
-});
+})

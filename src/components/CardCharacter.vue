@@ -21,15 +21,15 @@
 </template>
 
 <script lang="ts" setup>
-import { PropType } from 'vue-demi';
+import { PropType } from "vue-demi"
 
 export interface Props {
-  image: string;
-  name: string;
-  status: string;
-  species: string;
-  location: string;
-  origin: string;
+  image: string
+  name: string
+  status: string
+  species: string
+  location: string
+  origin: string
 }
 
 const props = defineProps({
@@ -37,5 +37,5 @@ const props = defineProps({
     type: Object as PropType<Props>,
     required: true,
   },
-});
+})
 </script>

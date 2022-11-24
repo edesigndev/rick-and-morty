@@ -11,6 +11,6 @@ const status = {
     name: "unknown",
     value: "",
   },
-};
+}
 
-export { status };
+export { status }
