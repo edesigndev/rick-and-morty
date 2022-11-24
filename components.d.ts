@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CardCharacter: typeof import('./src/components/CardCharacter.vue')['default']
     CardImage: typeof import('./src/components/CardImage.vue')['default']
-    ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElOption: typeof import('element-plus/es')['ElOption']
@@ -17,6 +16,7 @@ declare module '@vue/runtime-core' {
     ElSelect: typeof import('element-plus/es')['ElSelect']
     Header: typeof import('./src/components/Header.vue')['default']
     ListOfCardCharacter: typeof import('./src/components/ListOfCardCharacter.vue')['default']
+    NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchAndFilter: typeof import('./src/components/SearchAndFilter.vue')['default']
