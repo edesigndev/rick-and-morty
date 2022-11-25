@@ -1,8 +1,16 @@
 <template>
   <div class="search-character">
-    <div class="search-character-content">
-      <el-input id="search" v-model="text" placeholder="Ingresa nombre del personaje" minlength="4" maxlength="20" size="large" />
-      <select id="status" class="el-select" v-if="!showError && text.length > 0" v-model="statusFilter" placeholder="Status" size="large" @change="emit('change-filter', text, statusFilter)">
+    <div class="search-character-content gap-3">
+      <input class="w-full rounded-lg border p-3 text-sm" placeholder="Ingresa nombre del personaje" type="text" minlength="4" maxlength="20" id="search" v-model="text" />
+      <select
+        class="w-auto rounded-lg border p-3 text-sm"
+        id="status"
+        v-if="!showError && text.length > 0"
+        v-model="statusFilter"
+        placeholder="Status"
+        size="large"
+        @change="emit('change-filter', text, statusFilter)"
+      >
         <option v-for="item in options" :key="item.value" :label="item.name" :value="item.value" />
       </select>
     </div>
@@ -48,3 +56,22 @@ const showError = computed(() => {
   return msj
 })
 </script>
+
+<style>
+.search-character {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.search-character .search-character-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-character .search-character-error {
+  font-size: small;
+  color: red;
+  margin-top: 0.2rem;
+  text-align: left;
+}
+</style>

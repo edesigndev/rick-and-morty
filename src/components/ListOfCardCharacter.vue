@@ -1,9 +1,9 @@
 <template>
-  <el-row :gutter="24">
-    <el-col v-for="character in characters" :key="character.id" class="list-character" :lg="12" :sm="12" :md="24">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <template v-for="character in characters" :key="character.id">
       <CardCharacter :character="character" />
-    </el-col>
-  </el-row>
+    </template>
+  </div>
 </template>
 
 <script lang="ts" setup>
