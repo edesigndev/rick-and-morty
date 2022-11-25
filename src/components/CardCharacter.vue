@@ -1,13 +1,13 @@
 <template>
-  <div class="grid grid-cols-2 gap-4 border rounded-lg shadow-md mb-2 w-50">
+  <div class="grid grid-cols-2 gap-4 border rounded-lg shadow-md mb-2 w-50 h-70">
     <img class="object-cover w-full h-full rounded-l" :src="character.image" alt="" />
     <div class="p-4 leading-normal text-left">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ character.name }}</h5>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ character.status }} - {{ character.species }}</p>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">Last Known Location:</p>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ character.location.name }}</p>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">First seen in:</p>
-      <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ character.origin.name }}</p>
+      <h5 class="mb-2 font-bold tracking-tight text-gray-900">{{ character.name }}</h5>
+      <p class="mb-2 font-normal text-gray-700">{{ character.status }} - {{ character.species }}</p>
+      <p class="mb-2 font-normal text-gray-700">Last Known Location:</p>
+      <p class="mb-2 font-normal text-gray-700">{{ character.location.name }}</p>
+      <p class="mb-2 font-normal text-gray-700">First seen in:</p>
+      <p class="mb-2 font-normal text-gray-700">{{ character.origin.name }}</p>
     </div>
   </div>
 </template>

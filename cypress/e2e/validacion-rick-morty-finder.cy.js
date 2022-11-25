@@ -1,6 +1,6 @@
 describe("Validaciones Rick and Morty finder", () => {
   it("Navegar a url publica", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
   })
 
   it("Recargar pagina", () => {
@@ -8,7 +8,7 @@ describe("Validaciones Rick and Morty finder", () => {
   })
 
   it("Recargar pagina forzada", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
     cy.reload(true)
   })
 
@@ -21,24 +21,24 @@ describe("Validaciones Rick and Morty finder", () => {
   })
 
   it.only("Ingresar personaje a buscar", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
     cy.get("#search").type("rick")
   })
 
   it.only("Filtro por Alive", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
     cy.get("#search").type("rick")
 
     cy.get("#status").select("alive")
   })
   it.only("Filtro por dead", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
     cy.get("#search").type("rick")
 
     cy.get("#status").select("dead")
   })
   it.only("Filtro por unknown", () => {
-    cy.visit("http://127.0.0.1:5173/")
+    cy.visit("https://edesigndev.github.io/rick-and-morty/")
     cy.get("#search").type("rick")
 
     cy.get("#status").select("")

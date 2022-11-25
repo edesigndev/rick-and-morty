@@ -10,7 +10,7 @@
     "lint": "eslint src --ext .ts,.vue",
     "format": "prettier .  --write",
     "test": "cypress open --browser chrome --e2e",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.2.0",
