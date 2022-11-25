@@ -6,6 +6,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import vue from "@vitejs/plugin-vue"
 
 export default defineConfig({
+  base: "/rick-and-morty/",
   plugins: [
     vue(),
     AutoImport({
@@ -20,7 +21,6 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  transpileDependencies: true,
   css: {
     preprocessorOptions: {
       scss: {
@@ -28,5 +28,4 @@ export default defineConfig({
       },
     },
   },
-  base: "/rick-and-morty/",
 })

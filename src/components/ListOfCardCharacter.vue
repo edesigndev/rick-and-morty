@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <template v-for="character in characters">
-      <CardCharacter :character="character" :key="character.name" />
-    </template>
+    <div v-for="character in characters" :key="character.name">
+      <CardCharacter :character="character" />
+    </div>
   </div>
 </template>
 
